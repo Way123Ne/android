@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="phone_call.wayne.com.intenttest.MainActivity">
+
+    <TextView
+        android:id="@+id/tv_intent"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:text="意图Intent"
+        android:textSize="20dp" />
+
+    <Button
+        android:id="@+id/btn_at"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="action"
+        android:text="action" />
+
+    <Button
+        android:id="@+id/btn_atU"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="actionUri"
+        android:text="actionUri" />
+
+    <Button
+        android:id="@+id/btn_toSec"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="toSecondActivity"
+        android:text="跳转到第二个页面" />
+
+    <Button
+        android:id="@+id/btn_myA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="myAction"
+        android:text="myAction" />
+
+    <Button
+        android:id="@+id/btn_atM"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="actionMain"
+        android:text="返回到主界面" />
+</LinearLayout>
