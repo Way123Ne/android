@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <Button
+        android:id="@+id/btn_tween"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="测试补间动画" />
+
+    <Button
+        android:id="@+id/btn_property"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="测试属性动画" />
+
+    <Button
+        android:id="@+id/btn_reset"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="重置补间动画" />
+
+    <ImageView
+        android:id="@+id/iv_animation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/ic_launcher" />
+
+</LinearLayout>
