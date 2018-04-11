@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.wayne.broadcastdemo"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="12"
+        android:targetSdkVersion="21" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.wayne.broadcastdemo.MainActivity"
+            android:label="@string/app_name"
+            android:logo="@drawable/ic_launcher"
+            android:screenOrientation="landscape" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!-- 静态清单文件配置 -->
+        <!-- 静态注册 -->
+        <receiver android:name="com.wayne.broadcastreceiverdemo.Receiver_1" >
+            <intent-filter>
+                <action android:name="Action_1" />
+            </intent-filter>
+        </receiver>
+        <!-- 动态清单文件配置 -->
+       <!--   动态注册 
+        <receiver android:name="com.wayne.broadcastreceiverdemo.Receiver_2" >
+            <intent-filter>
+                <action android:name="Action_2" />
+            </intent-filter>
+        </receiver> -->
+    </application>
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+</manifest>
