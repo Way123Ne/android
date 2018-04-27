@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/>
+	<title>JS calls Android</title>
+</head>
+<body>
+<!--注意此处的myObj是android暴露出来的对象-->
+<input type="text" value="hello"
+	onclick="myObj.showToast('Mark');"/>
+<input type="text" value="booklist"
+	onclick="myObj.showList();"/>
+</body>
+</html>
