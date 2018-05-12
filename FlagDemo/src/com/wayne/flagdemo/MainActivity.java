@@ -10,7 +10,7 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 /*
- * boolean类型数据默认值为
+ * boolean类型数据默认值为false,并且应将其声明为成员变量或静态变量
  */
 public class MainActivity extends Activity {
 	private boolean flag;
