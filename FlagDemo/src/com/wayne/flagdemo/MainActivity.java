@@ -10,7 +10,7 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 /*
- * booleanÀàĞÍÊı¾İÄ¬ÈÏÖµÎªtrue
+ * booleanç±»å‹æ•°æ®é»˜è®¤å€¼ä¸º
  */
 public class MainActivity extends Activity {
 	private boolean flag;
@@ -51,7 +51,7 @@ public class MainActivity extends Activity {
 							SecondActivity.class);
 					startActivity(it);
 				} else {
-					Toast.makeText(getApplication(), "ÎŞ·¨Ìø×ªµ½ÏÂÒ»Ò³",
+					Toast.makeText(getApplication(), "æ— æ³•è·³è½¬åˆ°ä¸‹ä¸€é¡µ",
 							Toast.LENGTH_LONG).show();
 				}
 			}
