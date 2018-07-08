@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.5" 
+	xmlns="http://java.sun.com/xml/ns/javaee" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
+	http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+  <display-name></display-name>	
+  <!--欢迎页面,浏览器中输入http://106.128.30.96:8080/testServlet/ 后首先打开的页面  -->
+  <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+  <!--LoginServlet类的绝对路径  -->
+  <servlet>
+		<servlet-name>LoginServlet</servlet-name>
+		<servlet-class>com.wayne.servlet.LoginServlet</servlet-class>
+	</servlet>
+	<!---LoginServlet类 的相对路径 -->
+	<servlet-mapping>
+		<servlet-name>LoginServlet</servlet-name>
+		<url-pattern>/LoginServlet</url-pattern>
+	</servlet-mapping>
+  
+</web-app>
